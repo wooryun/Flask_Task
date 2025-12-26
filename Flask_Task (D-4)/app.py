@@ -3,14 +3,8 @@ from flask_smorest import Api
 from flask_mysqldb import MySQL
 import yaml
 from post_routes import create_posts_blueprint
-import os
-print(os.getcwd())
-print(os.listdir(os.getcwd()))
-
 
 app = Flask(__name__)
-
-# db_info = yaml.load(open('db.yaml'), Loader=yaml.FullLoader)
 
 db_info = yaml.load(open('Flask_Task (D-4)/db.yaml'), Loader=yaml.FullLoader)
 
